@@ -10,6 +10,10 @@ The idea is to create a base Dvorak layout with convenient access to a "coding" 
 
 ## Overview and philosophy
 
+Note: This layout is designed to be used with a US software layout.
+* ' and " are on the same key and Shift+2 produces @, rather than "
+* Shift+3 produces #, rather than £ in a UK layout.
+
 ### Base Layer (Dvorak)
 
 * **Layer keys** Layer keys to switch to the symbol layer are provided under each thumb. Other layer keys are provided but are not convenient as these will not be commonly used.
@@ -29,6 +33,25 @@ The idea is to create a base Dvorak layout with convenient access to a "coding" 
 
 * **Scope for many media (and other) control keys** Currently none of these keys are added, at least not until I figure out what these should look like. In any case, an entire layer is dedicated to the potential of providing this functionality. If this layer is useful, it will be worth making this layer more easily accessible.
 * Provided mouse keys although I do not fully intend to use them.
+
+## Building and flashing
+
+* This layout should be built as part of the [QMK firmware](https://github.com/qmk/qmk_firmware) repository.
+
+Clone the firmware repo and plant this layout into its keymappings:
+```bash
+$ git clone https://github.com/qmk/qmk_firmware
+$ cd qmk_firmware
+$ git clone http://github.com/dball03/TODO keyboards/ergodox/keymaps/ergodave
+```
+
+Build the firmware, specifying the desired layout:
+```bash
+make keyboard=ergodox keymap=ergodave
+```
+
+Then load the .hex file using a teensy loader (pjrc etc).
+
 
 ## Author
 
