@@ -4,10 +4,11 @@
 
 Attempting to create an effective Dvorak-based, ErgoDox layout, largely for programming using (Neo)Vim in Linux environment.
 The idea is to create a base Dvorak layout with convenient access to a "coding" layer for numberpad and the full complement of symbols.
+This should minimise the amount of "shifting" and stretching that is required, particularly for programming.
 
 ## Overview and philosophy
 
-Note: This layout is designed to be used with a US software layout.
+Note: This layout is designed to be used with a US software layout such that:
 * ' and " are on the same key and Shift+2 produces @, rather than "
 * Shift+3 produces #, rather than £ in a UK layout.
 
@@ -36,8 +37,7 @@ Note: This layout is designed to be used with a US software layout.
 
 </pre></code>
 
-* **Layer keys** Layer keys to switch to the symbol layer are provided under each thumb. Other layer keys are provided but are not convenient as these will not be commonly used.
-* **Special chars on the right-most column.** I only use Ctrl & Shift keys on the left side, so I used the right keys to include some of the more useful special characters as well.
+* **Accessible symbol layer keys** Layer keys to switch to the symbol layer are provided under each thumb. Other layer keys are provided but are not convenient as these will not be commonly used.
 * **No "speciality" keys (tap/hold differentiation)** Honestly, I figure that this is more hassle than it is worth.
 * **Common symbol keys** Some symbol common symbol keys are provided in the base layer (other than the standard .,'; set. I figured /\- are valuable to have on the base layer for typing paths and such.
 
