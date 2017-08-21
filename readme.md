@@ -13,9 +13,7 @@ Note: This layout is designed to be used with a US software layout such that:
 * Shift+3 produces #, rather than £ in a UK layout.
 
 ### Base Layer (Dvorak)
-
 <pre><code>
-
 ,--------------------------------------------------.           ,--------------------------------------------------.
 |   ESC  |   1  |   2  |   3  |   4  |   5  | left |           |right |   6  |   7  |   8  |   9  |   0  |   -    |
 |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
@@ -34,17 +32,14 @@ Note: This layout is designed to be used with a US software layout such that:
                                 | SPC  | BSPC |------|       |------| TAB  | ENTR |
                                 |      |      |      |       |      |      |      |
                                 `--------------------'       `--------------------'
-
-</pre></code>
+</code></pre>
 
 * **Accessible symbol layer keys** Layer keys to switch to the symbol layer are provided under each thumb. Other layer keys are provided but are not convenient as these will not be commonly used.
 * **No "speciality" keys (tap/hold differentiation)** Honestly, I figure that this is more hassle than it is worth.
 * **Common symbol keys** Some symbol common symbol keys are provided in the base layer (other than the standard .,'; set. I figured /\- are valuable to have on the base layer for typing paths and such.
 
 ### Secondary Typing layer (QWERTY)
-
 <pre><code>
-
 ,--------------------------------------------------.           ,--------------------------------------------------.
 |   ESC* |   1  |   2  |   3  |   4  |   5  | left |           |right |   6  |   7  |   8  |   9  |   0  |   -*   |
 |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
@@ -63,15 +58,12 @@ Note: This layout is designed to be used with a US software layout such that:
                                 | SPC* | BSPC*|------|       |------| TAB* | ENTR*|
                                 |      |      | HOME*|       | END* |      |      |
                                 `--------------------'       `--------------------'
-
-</pre></code>
+</code></pre>
 
 * A QWERTY layer is provided because reasons... Thought it could be handy to practice properly touch typing both Dvorak and QWERTY. It may also be useful for others who want to try it out :) This layer is functionally the same as the Dvorak layer in terms of the layer switching and usage.
 
 ### Symbol layer
-
 <pre><code>
-
 ,--------------------------------------------------.           ,--------------------------------------------------.
 |   ESC* |  F1  |  F2  |  F3  |  F4  |  F5  | F6   |           |  F7  |  F8  |  F9  | F10  | F11  |  F12 |        |
 |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
@@ -90,8 +82,7 @@ Note: This layout is designed to be used with a US software layout such that:
                                 | SPC* | BSPC*|------|       |------| TAB* | ENTR*|
                                 |      |      | HOME*|       | END* |      |      |
                                 `--------------------'       `--------------------'
-
-</pre></code>
+</code></pre>
 
 * **Brackets and Braces** These are all provided explicitly (without shifting) and arranged in-line.
 * **Other symbols** All symbols should be present somewhere on this layer, mostly in common typing positions.
@@ -99,7 +90,6 @@ Note: This layout is designed to be used with a US software layout such that:
 ### Media and Motions layer
 
 <pre><code>
-
 ,--------------------------------------------------.           ,--------------------------------------------------.
 |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
 |-------- ------ ------ ------ ------ -------------|           |------ ------ ------ ------ ------ ------ --------|
@@ -118,8 +108,7 @@ Note: This layout is designed to be used with a US software layout such that:
                                 | LFT  | RGT  |------|       |------|      |      |
                                 | CLK  | CLK  |      |       |      |      |      |
                                 `--------------------'       `--------------------'
-
-</pre></code>
+</code></pre>
 
 * **Scope for many media (and other) control keys** Currently none of these keys are added, at least not until I figure out what these should look like. In any case, an entire layer is dedicated to the potential of providing this functionality. If this layer is useful, it will be worth making this layer more easily accessible.
 * Provided mouse keys although I do not fully intend to use them.
