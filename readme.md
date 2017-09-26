@@ -15,11 +15,11 @@ Note: This layout is designed to be used with a US software layout such that:
 ### Base Layer (Dvorak)
 <pre><code>
 ,--------------------------------------------------.           ,--------------------------------------------------.
-|   ESC  |   1  |   2  |   3  |   4  |   5  | left |           |right |   6  |   7  |   8  |   9  |   0  |   -    |
+|   ESC  |   1  |   2  |   3  |   4  |   5  | left |           |right |   6  |   7  |   8  |   9  |   0  |   \    |
 |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
-|   DEL  |   '  |   ,  |   .  |   p  |   y  |  TG  |           |      |   f  |   g  |   c  |   r  |   l  |   \    |
+|   DEL  |   '  |   ,  |   .  |   p  |   y  |  TG  |           |      |   f  |   g  |   c  |   r  |   l  |   /    |
 |--------+------+------+------+------+------|MEDIA |           |      |------+------+------+------+------+--------|
-|   ESC  |   a  |   o  |   e  |   u  |   i  |------|           |------|   d  |   h  |   t  |   n  |   s  |   /    |
+|   ESC  |   a  |   o  |   e  |   u  |   i  |------|           |------|   d  |   h  |   t  |   n  |   s  |   -    |
 |--------+------+------+------+------+------|  TO  |           |      |------+------+------+------+------+--------|
 | LSHIFT |   ;  |   q  |   j  |   k  |   x  |QWERTY|           |      |   b  |   m  |   w  |   v  |   z  | RSHIFT |
 `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -41,11 +41,11 @@ Note: This layout is designed to be used with a US software layout such that:
 ### Secondary Typing layer (QWERTY)
 <pre><code>
 ,--------------------------------------------------.           ,--------------------------------------------------.
-|   ESC* |   1  |   2  |   3  |   4  |   5  | left |           |right |   6  |   7  |   8  |   9  |   0  |   -*   |
+|   ESC* |   1  |   2  |   3  |   4  |   5  | left |           |right |   6  |   7  |   8  |   9  |   0  |   \*   |
 |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
-|   DEL* |   q  |   w  |   e  |   r  |   t  |  TG  |           |      |   y  |   u  |   i  |   o  |   p  |   \*   |
+|   DEL* |   q  |   w  |   e  |   r  |   t  |  TG  |           |      |   y  |   u  |   i  |   o  |   p  |   /*   |
 |--------+------+------+------+------+------|MEDIA |           |      |------+------+------+------+------+--------|
-|   ESC* |   a  |   s  |   d  |   f  |   g  |------|           |------|   h  |   j  |   k  |   l  |   ;  |   / *  |
+|   ESC* |   a  |   s  |   d  |   f  |   g  |------|           |------|   h  |   j  |   k  |   l  |   ;  |   -*  |
 |--------+------+------+------+------+------|  TO  |           |      |------+------+------+------+------+--------|
 | LSHIFT*|   z  |   x  |   c  |   v  |   b  | BASE |           |      |   n  |   m  |   ,  |   .  |   /  | RSHIFT*|
 `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -117,16 +117,23 @@ Note: This layout is designed to be used with a US software layout such that:
 
 * This layout should be built as part of the [QMK firmware](https://github.com/qmk/qmk_firmware) repository.
 
+* Depends on avr-libc and gcc-avr packages
+
 Clone the firmware repo and plant this layout into its ergodox keymappings:
 ```bash
 $ git clone https://github.com/qmk/qmk_firmware
 $ cd qmk_firmware
-$ git clone http://github.com/dball03/TODO keyboards/ergodox/keymaps/ergodave
+$ git clone http://github.com/dball03/ErgoDave keyboards/ergodox_ez/keymaps/ergodave
 ```
 
 Build the firmware, specifying the desired layout:
 ```bash
 make keyboard=ergodox keymap=ergodave
+
+or
+
+cd keyboards/ergodox_ez
+make ergodave
 ```
 
 Then load the .hex file using a teensy loader (pjrc etc).
