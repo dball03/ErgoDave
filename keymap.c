@@ -50,27 +50,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = KEYMAP(
     /* LEFT HAND */
     KC_ESCAPE,  KC_1,       KC_2,       KC_3,       KC_4,       KC_5,       KC_LEFT,
-    KC_DELETE,  KC_QUOTE,   KC_COMMA,   KC_DOT,     KC_P,       KC_Y,       TG(MEDIA),
+    KC_DELETE,  KC_QUOTE,   KC_COMMA,   KC_DOT,     KC_P,       KC_Y,       KC_TRNS,
     ALT_T(KC_ESCAPE),KC_A,  KC_O,       KC_E,       KC_U,       KC_I,
-    KC_LSHIFT,  KC_SCOLON,  KC_Q,       KC_J,       KC_K,       KC_X,       TO(QWERTY),
+    KC_LSHIFT,  KC_SCOLON,  KC_Q,       KC_J,       KC_K,       KC_X,       KC_TRNS,
     KC_LCTL,    KC_LGUI,    KC_LALT,    KC_TRNS,    MO(SYMB),
 
                                                     KC_TRNS,    KC_TRNS,
                                                                 KC_TRNS,
-                                        KC_SPACE,   KC_BSPACE,  KC_HOME,
+                                            LT(SYMB,KC_SPACE),  KC_BSPACE,  KC_HOME,
 
 
     /* RIGHT HAND */
     KC_RIGHT,   KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_BSLASH,
-    KC_TRNS,    KC_F,       KC_G,       KC_C,       KC_R,       KC_L,       /* KC_NONUS_BSLASH,*/ KC_SLASH,
+    TG(QWERTY), KC_F,       KC_G,       KC_C,       KC_R,       KC_L,       /* KC_NONUS_BSLASH,*/ KC_SLASH,
                 KC_D,       KC_H,       KC_T,       KC_N,       KC_S,       KC_MINUS,
-    KC_TRNS,    KC_B,       KC_M,       KC_W,       KC_V,       KC_Z,       KC_RSHIFT,
+    TG(MEDIA),  KC_B,       KC_M,       KC_W,       KC_V,       KC_Z,       KC_RSHIFT,
 
                             MO(SYMB),      KC_LEFT,    KC_DOWN,    KC_UP,      KC_RIGHT,
 
                 KC_TRNS,    KC_TRNS,
                 KC_TRNS,
-                KC_END,     KC_TAB,     KC_ENTER),
+                KC_END,     KC_TAB,     LT(SYMB,KC_ENTER)),
 
 /* 1: QWERTY layer
  *
